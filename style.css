@@ -1,0 +1,248 @@
+/* --- RESET & GOALS --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+:root {
+    --navy-blue: #0d1322;
+    --orange: #ff6b00;
+    --text-dark: #222222;
+    --text-light: #888888;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    background-color: var(--navy-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%; /* Jarak navbar dilebarkan */
+}
+
+.logo img {
+    height: 40px; /* Sesuaikan ukuran logo */
+}
+
+.nav-links {
+    display: flex;
+    gap: 50px; /* Jarak antar menu diperlebar */
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-links a i {
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+/* Penyatuan Search dan Cart sesuai desain */
+.search-cart-pill {
+    background-color: var(--orange);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px 8px 20px;
+}
+
+.search-icon {
+    color: var(--navy-blue);
+    font-size: 14px;
+}
+
+.search-cart-pill input {
+    background: transparent;
+    border: none;
+    color: var(--navy-blue);
+    outline: none;
+    width: 120px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.search-cart-pill input::placeholder {
+    color: var(--navy-blue);
+    opacity: 0.7;
+}
+
+.cart-icon {
+    color: var(--navy-blue);
+    font-size: 18px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+    background: url('assets/images/hero-bg.png') no-repeat center center;
+    background-color: #d8d8d8;
+    background-size: contain;
+    height: 400px; /* Tinggi hero section diperkecil dari 450px menjadi 300px */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 0 -80px 80px -20px var(--primary-dark);
+}
+
+.hero-container {
+    width: 80%;
+    position: relative;
+}
+
+.hero-text {
+    color: var(--navy-blue);
+    font-size: 4.5rem; /* Ukuran font disesuaikan sedikit agar muat dengan tinggi baru */
+    font-weight: 900;
+    text-transform: uppercase;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.text-upgrade {
+    position: absolute;
+    top: 40px; /* Posisi disesuaikan */
+    left: 0;
+}
+
+.text-headwear {
+    position: absolute;
+    top: 40px; /* Posisi disesuaikan */
+    right: 0;
+}
+
+.text-your {
+    position: absolute;
+    top: 130px; /* Posisi disesuaikan */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* --- PRODUCT SECTION --- */
+.product-section {
+    padding: 50px 0;
+    width: 90%; /* Diperlebar agar ruang untuk card lebih maksimal */
+    margin: 0 auto; 
+}
+
+.section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--text-dark);
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    column-gap: 30px;
+    row-gap: 40px;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    padding: 30px 20px; /* Padding atas-bawah diperbesar agar card lebih tinggi */
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+}
+
+.product-card img {
+    width: 90%; /* Memaksimalkan lebar gambar topi di dalam card */
+    height: 220px; /* Gambar topi dibuat lebih tinggi/besar */
+    object-fit: contain;
+    margin-bottom: 25px; /* Jarak antara gambar dan teks diperbesar */
+}
+
+.product-info {
+    text-align: left; 
+    padding: 0 10px; /* Memberi sedikit ruang agar teks tidak terlalu menempel ke tepi card */
+}
+
+.product-info h3 {
+    font-size: 14px; /* Teks judul produk sedikit dibesarkan */
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.product-info .price {
+    font-size: 15px; /* Ukuran harga sedikit dibesarkan */
+    color: var(--orange);
+    font-weight: bold;
+}
+
+/* --- FOOTER --- */
+.footer {
+    background-color: var(--navy-blue);
+    padding: 50px 10%;
+    color: #fff;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left p, .footer-right p {
+    font-size: 12px;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-icon {
+    width: 15px; /* Asumsi menggunakan icon gambar kecil */
+}
+
+.footer-center {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-big-logo {
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.footer-line {
+    width: 100%;
+    height: 1px;
+    background-color: #333; /* Garis pemisah */
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 25px;
+    cursor: pointer;
+}

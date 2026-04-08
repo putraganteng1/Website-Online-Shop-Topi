@@ -3,156 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caps - Premium Headwear</title>
+    <title>Caps - Upgrade Your Headwear</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header class="navbar">
         <div class="logo">
-            <img src="assets/images/logo.png" alt="Caps Logo">
+            <img src="assets/image/logo.png" alt="Caps Logo">
         </div>
         <nav class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="#">Category <i class="fa-solid fa-chevron-down" style="font-size: 10px;"></i></a>
+            <a href="#" class="active">Home</a>
+            <a href="#">Category <i class="fa-solid fa-chevron-down"></i></a>
             <a href="#">Contact</a>
         </nav>
-        <div class="nav-actions">
-            <div class="search-box">
-                <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="nav-right">
+            <div class="search-cart-pill">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
                 <input type="text" placeholder="Search...">
+                <a href="cart.html" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
-            <a href="cart.html" class="cart-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-            </a>
         </div>
     </header>
 
     <section class="hero">
-        <div class="hero-text">
-            <h1>Upgrade</h1>
-            <h1 class="hero-right">Headwear</h1>
-            <h1 class="hero-bottom">YOUR</h1>
+        <div class="hero-container">
+            <h1 class="hero-text">
+                <span class="text-upgrade">Upgrade</span> 
+                <span class="text-headwear">Headwear</span>
+                <span class="text-your">YOUR</span>
+            </h1>
         </div>
     </section>
 
-    <section class="container products-section">
+    <section class="product-section">
         <h2 class="section-title">New product</h2>
+        
         <div class="product-grid">
-            <div class="product-card" onclick="goToDetail('lakers')">
-                <img src="assets/images/lakers.png" alt="Los Angeles Lakers Team">
-                <h3>Los Angeles Lakers Team</h3>
-                <p class="price">$49.99</p>
+            <div class="product-card" onclick="goToDetail(1)">
+                <img src="assets/images/lakers.png" alt="Lakers">
+                <div class="product-info">
+                    <h3>Los Angeles Lakers Icon S...</h3>
+                    <p class="price">$18.99</p>
+                </div>
             </div>
-            <div class="product-card" onclick="goToDetail('yankees-bw')">
-                <img src="assets/images/yankees-bw.png" alt="New York Yankees Black and White">
-                <h3>New York Yankees Black and White</h3>
-                <p class="price">$39.99</p>
+            <div class="product-card" onclick="goToDetail(2)">
+                <img src="assets/images/yankees-bw.png" alt="Yankees">
+                <div class="product-info">
+                    <h3>New York Yankees Black an...</h3>
+                    <p class="price">$20.99</p>
+                </div>
             </div>
-            <div class="product-card" onclick="goToDetail('bulls')">
-                <img src="assets/images/bulls.png" alt="Chicago Bulls Core Classic Gray">
-                <h3>Chicago Bulls Core Classic Gray</h3>
-                <p class="price">$31.99</p>
+            <div class="product-card" onclick="goToDetail(3)">
+                <img src="assets/images/bulls.png" alt="Bulls">
+                <div class="product-info">
+                    <h3>Chicago Bulls Core Classic...</h3>
+                    <p class="price">$21.59</p>
+                </div>
+            </div>
+
+            <div class="product-card" onclick="goToDetail(4)">
+                <img src="assets/images/dodgers.png" alt="Dodgers">
+                <div class="product-info">
+                    <h3>Los Angeles Dodgers Jers...</h3>
+                    <p class="price">$22.50</p>
+                </div>
+            </div>
+            <div class="product-card" onclick="goToDetail(5)">
+                <img src="assets/images/eiger.png" alt="Trucker">
+                <div class="product-info">
+                    <h3>Dart Retro Trucker Cap</h3>
+                    <p class="price">$15.75</p>
+                </div>
+            </div>
+            <div class="product-card" onclick="goToDetail(6)">
+                <img src="assets/images/matigaya.png" alt="Mati Gaya">
+                <div class="product-info">
+                    <h3>Dart Retro Trucker Cap</h3>
+                    <p class="price">$16.20</p>
+                </div>
+            </div>
+
+            <div class="product-card" onclick="goToDetail(7)">
+                <img src="assets/images/beanie.png" alt="Beanie">
+                <div class="product-info">
+                    <h3>Hooligan Beanie Black Silv...</h3>
+                    <p class="price">$8.97</p>
+                </div>
+            </div>
+            <div class="product-card" onclick="goToDetail(8)">
+                <img src="assets/images/bucket.png" alt="Bucket">
+                <div class="product-info">
+                    <h3>Golf Le Fleur All Over Buck...</h3>
+                    <p class="price">$49.50</p>
+                </div>
+            </div>
+            <div class="product-card" onclick="goToDetail(9)">
+                <img src="assets/images/green-panel.png" alt="Green Cap">
+                <div class="product-info">
+                    <h3>Sporty Solid Green 5 Pa...</h3>
+                    <p class="price">$25.00</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <div class="section-divider">
-        <div class="container">
-            <h2>LIST PRODUK</h2>
-        </div>
-    </div>
-    
-    <section class="container products-section">
-        <div class="product-grid">
-            <div class="product-card" onclick="goToDetail('dodgers-city')">
-                <img src="assets/images/dodgers.png" alt="Los Angeles Dodgers City Connect">
-                <h3>Los Angeles Dodgers City Connect</h3>
-                <p class="price">$45.99</p>
+     <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <p><img src="assets/image/icon-pin.png" alt="pin" class="footer-icon"> 7891 California Avenue, Suite B</p>
+                <p><img src="assets/image/icon-mail.png" alt="mail" class="footer-icon"> info@capscompany.com</p>
             </div>
-            <div class="product-card" onclick="goToDetail('eiger-native')">
-                <img src="assets/images/eiger.png" alt="Eiger Native Trucker Cap">
-                <h3>Eiger Native Trucker Cap</h3>
-                <p class="price">$8.36</p>
-            </div>
-            <div class="product-card" onclick="goToDetail('matigaya')">
-                <img src="assets/images/matigaya.png" alt="Mati Gaya Cap">
-                <h3>Mati Gaya Cap</h3>
-                <p class="price">$6.59</p>
-            </div>
-            <div class="product-card" onclick="goToDetail('beanie')">
-                <img src="assets/images/beanie.png" alt="Hooligans Beanie Hat">
-                <h3>Hooligans Beanie Hat Bobby Black</h3>
-                <p class="price">$8.97</p>
-            </div>
-            <div class="product-card" onclick="goToDetail('bucket')">
-                <img src="assets/images/bucket.png" alt="Golf is Good Bucket Hat">
-                <h3>Golf is Good All Over Bucket Hat</h3>
-                <p class="price">$44.99</p>
-            </div>
-            <div class="product-card" onclick="goToDetail('green-panel')">
-                <img src="assets/images/green-panel.png" alt="House of Smith Panel Green">
-                <h3>House of Smith Sweat Five Panel Green</h3>
-                <p class="price">$5.98</p>
-            </div>
-        </div>
-    </section>
-
-    <div class="orange-banner"></div>
-
-    <div class="section-divider">
-        <div class="container">
-            <h2>LIST PRODUK/FOOTER</h2>
-        </div>
-    </div>
-
-    <section class="container products-section" style="margin-bottom: 40px;">
-        <div class="product-grid">
-            <div class="product-card" onclick="goToDetail('vondutch')">
-                <img src="assets/images/vondutch.png" alt="Von Dutch Trucker Hat">
-                <h3>Von Dutch Red & Yellow Trucker Hat</h3>
-                <p class="price">$39.19</p>
-            </div>
-            <div class="product-card" onclick="goToDetail('yankees-home')">
-                <img src="assets/images/yankees-home.png" alt="Yankees Classic Home">
-                <h3>New York Yankees Core Classic Home</h3>
-                <p class="price">$32.99</p>
-            </div>
-            <div class="product-card" onclick="goToDetail('dodgers-league')">
-                <img src="assets/images/dodgers-league.png" alt="Dodgers The League">
-                <h3>Los Angeles Dodgers The League</h3>
-                <p class="price">$34.99</p>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-container">
-                <div class="footer-left">
-                    <p><i class="fa-solid fa-location-dot"></i> 123 Fashion Avenue, Floor 2</p>
-                    <p><i class="fa-solid fa-map"></i> Jl. Ir. H. Djuanda, Bandung</p>
-                </div>
-                
-                <div class="footer-center">
-                    <img src="assets/images/logo.png" alt="Caps Logo" class="footer-logo">
-                    <p class="slogan">Don't Follow Trends. Set Them</p>
-                </div>
-
-                <div class="footer-right">
-                    <p><i class="fa-solid fa-phone"></i> +62 813 3456 7890</p>
-                    <p><i class="fa-solid fa-envelope"></i> Caps85@gmail.com</p>
+            <div class="footer-center">
+                <img src="assets/image/logo-footer.png" alt="Caps Big Logo" class="footer-big-logo">
+                <p class="tagline">Don't Follow Trends, Set Them</p>
+                <div class="footer-line"></div>
+                <div class="social-icons">
+                    <img src="assets/image/icon-ig.png" alt="IG">
+                    <img src="assets/image/icon-tiktok.png" alt="TikTok">
+                    <img src="assets/image/icon-fb.png" alt="FB">
                 </div>
             </div>
-            <div class="footer-social">
-                <img src="assets/images/ig-icon.png" alt="IG" class="social-icon">
-                <img src="assets/images/tiktok-icon.png" alt="TikTok" class="social-icon">
-                <img src="assets/images/fb-icon.png" alt="FB" class="social-icon">
+            <div class="footer-right">
+                <p><img src="assets/image/icon-phone.png" alt="phone" class="footer-icon"> +87873 3458 9345</p>
+                <p><img src="assets/image/icon-web.png" alt="web" class="footer-icon"> CapsHeadwear.com</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
