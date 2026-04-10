@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Method - 98 CAPS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="payment-body">
+
+    <div class="checkout-container">
+        <div class="checkout-left">
+            <h2>Payment Method</h2>
+            
+            <div class="payment-logos">
+                <div class="bank-btn active">
+                    <img src="assets/images/bca.png" alt="BCA" onerror="this.outerHTML='<b>BCA</b>'">
+                </div>
+                <div class="bank-btn">
+                    <img src="assets/images/bri.png" alt="BRI" onerror="this.outerHTML='<b>BRI</b>'">
+                </div>
+                <div class="bank-btn">
+                    <img src="assets/images/mandiri.png" alt="Mandiri" onerror="this.outerHTML='<b>Mandiri</b>'">
+                </div>
+                <div class="bank-btn">
+                    <img src="assets/images/bsi.png" alt="BSI" onerror="this.outerHTML='<b>BSI</b>'">
+                </div>
+            </div>
+
+            <div class="payment-detail-badge">Payment Detail</div>
+
+            <form class="checkout-form">
+                <label>recipient's name</label>
+                <input type="text" id="rec-name">
+                
+                <label>email address/phone number</label>
+                <input type="text" id="rec-contact">
+                
+                <label>home address</label>
+                <input type="text" id="rec-address">
+            </form>
+
+            <div class="checkout-bottom-row">
+                <div class="checkout-summary">
+                    <h4>Summary</h4>
+                    <div class="summary-line">
+                        <span>Subtotal</span>
+                        <span id="checkout-subtotal" class="text-orange">$0.00</span>
+                    </div>
+                    <div class="summary-line">
+                        <span>Postage</span>
+                        <span class="text-orange">$8.00</span>
+                    </div>
+                    <div class="summary-line">
+                        <span>Store handling charges</span>
+                        <span class="text-orange">$2.00</span>
+                    </div>
+                    <hr class="summary-divider">
+                    <div class="summary-line total-line">
+                        <span>Total</span>
+                        <span id="checkout-total" class="text-orange">$0.00</span>
+                    </div>
+                </div>
+
+                <div class="checkout-actions">
+                    <button class="btn-checkout" id="btn-process-checkout">Checkout</button>
+                    <button class="btn-back" onclick="window.location.href='cart.html'">Back</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="checkout-right">
+            <div class="rotated-text">One Click Away From Your Best Look</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

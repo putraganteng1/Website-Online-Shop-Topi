@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation - 98 CAPS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #f4f6f9;">
+
+   <header class="navbar">
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="Caps Logo">
+        </div>
+        <nav class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#">Category <i class="fa-solid fa-chevron-down"></i></a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="nav-right">
+            <div class="search-cart-pill">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" placeholder="Search...">
+                <a href="cart.html" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="confirmation-section">
+        <div class="confirmation-container">
+            <div class="icon-check-box">
+                <iconify-icon icon="teenyicons:tick-circle-outline" class="big-check-icon"></iconify-icon>
+            </div>
+            
+            <h1 class="conf-title">Thank you for your purpchase</h1>
+            
+            <p class="conf-text">
+                Your order will be processed immediately! Thank you<br> very much for choosing us!
+            </p>
+            
+            <p class="conf-small-text">Here are your order details:</p>
+
+            <div class="order-detail-box">
+                <h3>Your order</h3>
+                
+                <div id="confirmation-items-list">
+                    </div>
+
+                <div class="order-summary-totals">
+                    <div class="total-row">
+                        <span>Subtotal</span>
+                        <span id="conf-subtotal" class="price-val">$0.00</span>
+                    </div>
+                    <div class="total-row">
+                        <span>Postage</span>
+                        <span class="price-val">$8.00</span>
+                    </div>
+                    <div class="total-row">
+                        <span>Handling charges</span>
+                        <span class="price-val">$2.00</span>
+                    </div>
+                    <hr class="summary-divider">
+                    <div class="total-row grand-total">
+                        <span>Total</span>
+                        <span id="conf-total" class="price-val">$0.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn-back-home" onclick="window.location.href='index.html'">Back to home</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

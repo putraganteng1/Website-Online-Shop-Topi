@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trucker Hats - 98 CAPS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body style="background-color: #ffffff; margin: 0; padding: 0;">
+
+    <header class="main-header">
+        <nav class="navbar" style="background-color: #0d1322; display: flex; justify-content: space-between; align-items: center; padding: 15px 8%; position: relative; z-index: 9999;">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="98 CAPS" style="height: 50px;">
+                </a>
+            </div>
+            
+            <div class="nav-links" style="display: flex; gap: 30px; align-items: center;">
+                <a href="index.html" style="color: white; text-decoration: none;">Home</a>
+                
+                <div class="dropdown" style="position: relative; display: inline-block;">
+                    <a href="#" style="color: white; text-decoration: none; cursor: pointer;">
+                        Category <i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i>
+                    </a>
+                    <div class="dropdown-content" style="display: none; position: absolute; background-color: #0d1322; min-width: 150px; z-index: 999; top: 100%; left: 0; padding: 10px 0;">
+                        <a href="category-snapback.html" style="color: white; padding: 10px 15px; text-decoration: none; display: block; transition: color 0.2s;">Snapback Hats</a>
+                        <a href="category-trucker.html" style="color: white; padding: 10px 15px; text-decoration: none; display: block; transition: color 0.2s;">Trucker Hats</a>
+                        <a href="category-baseball.html" style="color: white; padding: 10px 15px; text-decoration: none; display: block; transition: color 0.2s;">Baseball Hats</a>
+                    </div>
+                </div>
+                
+                <a href="#" style="color: white; text-decoration: none;">Contact</a>
+            </div>
+            
+            <div class="search-cart-container" style="background-color: #ff6b00; padding: 8px 15px; border-radius: 25px; display: flex; align-items: center; gap: 15px;">
+                <i class="fa-solid fa-magnifying-glass" style="color: #0d1322;"></i>
+                <input type="text" placeholder="Search....." style="background: transparent; border: none; outline: none; color: #0d1322; width: 100px;">
+                <a href="cart.html" style="color: #0d1322;"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="banner-kategori">
+        <img src="assets/images/banner-trucker.png" alt="Trucker Hats Banner">
+    </div>
+
+    <main class="kategori-container">
+        <div class="badge-kategori">Trucker Hats</div>
+
+        <div class="product-grid">
+            
+            <div class="product-card" onclick="goToDetail(15)">
+                <h3 class="product-title">Distressed Dirty Pink</h3>
+                <div class="product-img-wrapper">
+                    <img src="assets/images/vondutch-pink.png" alt="Dodgers" class="img-main">
+                    <img src="assets/images/vondutch-pink-model.png" alt="Dodgers Model" class="img-hover">
+                </div>
+                <p class="product-price">$37.99</p>
+            </div>
+
+            <div class="product-card" onclick="goToDetail(16)">
+                <h3 class="product-title">Retro Adventure 2.0</h3>
+                <div class="product-img-wrapper">
+                    <img src="assets/images/eiger-hijau.png" alt="Yankees" class="img-main">
+                    <img src="assets/images/eiger-hijau-model.png" alt="Yankees Model" class="img-hover">
+                </div>
+                <p class="product-price">$20.99</p>
+            </div>
+
+            <div class="product-card" onclick="goToDetail(17)">
+                <h3 class="product-title">AS Roma Tonal</h3>
+                <div class="product-img-wrapper">
+                    <img src="assets/images/roma.png" alt="Red Sox" class="img-main">
+                    <img src="assets/images/roma-model.png" alt="Red Sox Model" class="img-hover">
+                </div>
+                <p class="product-price">$37.99</p>
+            </div>
+
+            <div class="product-card" onclick="goToDetail(18)">
+                <h3 class="product-title">Scar Ride 2.0</h3>
+                <div class="product-img-wrapper">
+                    <img src="assets/images/eiger-biru.png" alt="Heat" class="img-main">
+                    <img src="assets/images/eiger-biru-model.png" alt="Heat Model" class="img-hover">
+                </div>
+                <p class="product-price">$22.99</p>
+            </div>
+
+            <div class="product-card" onclick="goToDetail(19)">
+                <h3 class="product-title">Chelsea FC Patch Black</h3>
+                <div class="product-img-wrapper">
+                    <img src="assets/images/chelsea.png" alt="Warriors" class="img-main">
+                    <img src="assets/images/chelsea-model.png" alt="Warriors Model" class="img-hover">
+                </div>
+                <p class="product-price">$37.99</p>
+            </div>
+
+            <div class="product-card" onclick="goToDetail(20)">
+                <h3 class="product-title">White & Red</h3>
+                <div class="product-img-wrapper">
+                    <img src="assets/images/vondutch-merah.png" alt="Suns" class="img-main">
+                    <img src="assets/images/vondutch-merah-model.png" alt="Suns Model" class="img-hover">
+                </div>
+                <p class="product-price">$32.99</p>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="bottom-bar"></div>
+
+    <script src="script.js"></script>
+
+    <script>
+        const dropdown = document.querySelector('.dropdown');
+        const dropdownContent = document.querySelector('.dropdown-content');
+
+        dropdown.addEventListener('mouseenter', () => dropdownContent.style.display = 'block');
+        dropdown.addEventListener('mouseleave', () => dropdownContent.style.display = 'none');
+        
+        const dropdownLinks = document.querySelectorAll('.dropdown-content a');
+        dropdownLinks.forEach(link => {
+            link.addEventListener('mouseenter', () => {
+                link.style.color = '#ff6b00';
+            });
+            link.addEventListener('mouseleave', () => {
+                link.style.color = '#ffffff';
+            });
+        });
+    </script>
+</body>
+</html>

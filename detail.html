@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Caps</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="assets/images/logo.png" alt="Caps Logo"></a>
+        </div>
+        <nav class="nav-links">
+    <a href="index.html">Home</a>
+    
+    <div class="dropdown">
+        <a href="#" style="cursor: pointer;">Category <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="dropdown-content">
+            <a href="category-snapback.html">Snapback Hats</a>
+            <a href="category-trucker.html">Trucker Hats</a>
+            <a href="category-baseball.html">Baseball Hats</a>
+        </div>
+    </div>
+    
+    <a href="#">Contact</a>
+</nav>
+        <div class="nav-right">
+            <div class="search-cart-pill">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" placeholder="Search...">
+                <a href="cart.html" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="detail-section">
+        <div class="detail-container">
+            
+            <div class="gallery-thumbnails" id="thumbnail-container">
+                </div>
+
+            <div class="gallery-main">
+                <button class="nav-arrow left-arrow"><i class="fa-solid fa-chevron-left"></i></button>
+                <img src="assets/images/lakers.png" alt="Main Product" id="main-product-image">
+                <button class="nav-arrow right-arrow"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+
+            <div class="product-info">
+                <h1 id="detail-title" class="detail-title">Nama Produk</h1>
+                <p id="detail-subtitle" class="detail-subtitle">Color 59FIFTY Fitted</p>
+                <p id="detail-price" class="detail-price">$00.00</p>
+                
+                <hr class="divider">
+
+                <div class="options-row">
+                    <div class="size-selector">
+                        <button class="size-btn active">S</button>
+                        <button class="size-btn">M</button>
+                        <button class="size-btn">L</button>
+                        <button class="size-btn">XL</button>
+                    </div>
+                    
+                    <div class="quantity-selector">
+                        <button class="qty-btn"><i class="fa-solid fa-minus"></i></button>
+                        <input type="text" value="1" class="qty-input" readonly>
+                        <button class="qty-btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn-add-cart">ADD TO CART</button>
+                    <button class="btn-buy-now">BUY NOW</button>
+                </div>
+
+                <hr class="divider">
+
+                <div class="detail-accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">DETAILS</div>
+                        <div class="accordion-content" id="detail-description">
+                            Deskripsi produk akan muncul di sini.
+                        </div>
+                    </div>
+                    <hr class="divider">
+                    <div class="accordion-item">
+                    <div class="accordion-header d-flex-between" id="btn-size-guide">
+                SIZE GUIDE <i class="fa-solid fa-chevron-down"></i>
+                 </div>
+                       </div>
+                    </div>
+                    <hr class="divider">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div id="size-guide-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal"><i class="fa-solid fa-xmark"></i></span>
+            <img src="assets/images/size-guide.png" alt="Size Guide" class="size-guide-img">
+        </div>
+    </div>
+    <div id="toast" class="toast-notification">
+        <i class="fa-solid fa-circle-check" style="color: #28a745; font-size: 20px;"></i>
+        <span id="toast-message">Berhasil ditambahkan ke keranjang!</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+    <script src="script.js"></script>
+</body>
+</html>
